@@ -6,7 +6,6 @@
     <meta name="description" content="Descrição do conteúdo" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" href="./img/japan.png" />
-    <link rel="stylesheet" href="./js/slideshow.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,41 +17,146 @@
   </head>
 
   <body>
-    <div id="container">
-      <header>
-        <img src="./img/japaneseFlag.png" alt="Bandeira do Japão" />
+    <header>
+      <div id="topo">
+        <a href="index.html"
+          ><img
+            src="./img/japaneseFlag.png"
+            alt="Bandeira do Japão"
+            width="280px"
+        /></a>
 
         <nav>
           <li>
-            <a href="#"> Home </a>
+            <a class="links" href="index.html"> Home </a>
           </li>
           <li>
-            <a href="#"> Cultura </a>
+            <a class="links" href="cultura.html"> Cultura </a>
           </li>
           <li>
-            <a href="#"> Entretenimento </a>
+            <a class="links" href="entretenimento.html"> Entretenimento </a>
           </li>
-          <li><a href="">Pontos turísticos</a></li>
-          <li><a href="">Gastronomia</a></li>
           <li>
-            <a href=""
+            <a class="links" href="pontosTuristicos.html">Pontos turísticos</a>
+          </li>
+          <li>
+            <a class="links" href="gastronomia.html">Gastronomia</a>
+          </li>
+          <li>
+            <a class="links" href=""
               ><img id="japan-map" src="./img/japanMap.png" alt="Mapa do Japão"
             /></a>
           </li>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <div id="slider">
-          <figure>
-            <img src="./img/japanesewoman (1).jpg" alt="Japanese People" />
-            <img src="./img/onepiece.jpg" alt="Japanese People" />
-            <img src="./img/mountfuji.png" alt="Mount Fuji" />
-          </figure>
+    <main>
+      <div id="topo">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              class="img-main"
+              src="./img/japanesewoman.jpg"
+              style="width: 100%"
+            />
+            <div class="text">Cultura japonesa</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              class="img-main"
+              src="./img/montfuji.jpg"
+              style="width: 100%"
+            />
+            <div class="text">Mount Fuji</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              class="img-main"
+              src="./img/japaneseFood"
+              style="width: 100%"
+            />
+            <div class="text">Comida japonesa</div>
+          </div>
         </div>
-      </main>
+        <br />
 
-      <footer></footer>
-    </div>
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <script src="./js/slideshow.js"></script>
+
+      <div id="conteudo-home">
+        <div class="conteudo" style="border: 2px solid rgb(255, 255, 255)">
+          <a href="cultura.html" title="Cultura Japonesa">
+            <img
+              src="./img/culturapopular.jpg"
+              width="229px;"
+              height="150px"
+              style="border-radius: 20px; padding: 5px"
+            />
+          </a>
+          <p style="text-transform: uppercase">Cultura</p>
+        </div>
+
+        <div class="conteudo" style="border: 2px solid rgb(255, 0, 0)">
+          <a href="entretenimento.html" title="Cultura Japonesa">
+            <img
+              src="./img/bandajaponesa.jpg"
+              width="225px;"
+              height="150px"
+              style="border-radius: 5px; padding: 5px"
+            />
+          </a>
+          <p style="text-transform: uppercase">Entretenimento</p>
+        </div>
+
+        <div class="conteudo" style="border: 2px solid rgb(255, 255, 255)">
+          <a href="pontosTuristicos.html" title="Cultura Japonesa">
+            <img
+              src="./img/bombAtomic.jpg.opdownload"
+              width="229px;"
+              height="150px"
+              style="border-radius: 20px; padding: 5px"
+            />
+          </a>
+          <p style="text-transform: uppercase">Pontos Turísticos</p>
+        </div>
+
+        <div class="conteudo" style="border: 2px solid rgb(255, 0, 0)">
+          <a href="gastronomia.html" title="Cultura Japonesa">
+            <img
+              src="./img/japoneseFood.jpg"
+              width="229px;"
+              height="150px"
+              style="border-radius: 20px; padding: 5px"
+            />
+          </a>
+          <p style="text-transform: uppercase">Gastronomia</p>
+        </div>
+
+        <h2 style="color: #ffffff; text-align: center">
+          <strong>POR QUE CONHECER O JAPÃO?</strong>
+        </h2>
+
+        <p style="font-size: 20px">
+          A forte consciência ecológica dos seus habitantes – tão diferente da
+          dos seus vizinhos chineses – fazem do
+          <b style="color: #ff0000; text-transform: uppercase">Japão</b> um país
+          limpo e pouco poluído. O que faz brilhar ainda mais os seus belos
+          jardins, os seus parques naturais, as suas frondosas florestas e as
+          suas montanhas célebres, como o Monte Fuji.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <strong>Desenvolvido por Samuel Orsini</strong>
+    </footer>
   </body>
 </html>
