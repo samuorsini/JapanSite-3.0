@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Samuel Orsini" />
+    <meta name="description" content="Descrição do conteúdo" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/japan.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Entretenimento japones</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="topo">
+        <a href="index.html"
+          ><img
+            src="./img/japaneseFlag.png"
+            alt="Bandeira do Japão"
+            title="Bandeira Japonesa"
+            width="280px"
+        /></a>
+
+        <nav>
+          <li>
+            <a class="links" href="index.html"> Home </a>
+          </li>
+          <li>
+            <a class="links" href="cultura.html"> Cultura </a>
+          </li>
+          <li>
+            <a class="links" href="entretenimento.html"> Entretenimento </a>
+          </li>
+          <li>
+            <a class="links" href="pontosTuristicos.html">Pontos turísticos</a>
+          </li>
+          <li>
+            <a class="links" href="gastronomia.html">Gastronomia</a>
+          </li>
+          <li>
+            <a class="links" href="japanmap.html"
+              ><img id="japan-map" src="./img/japanMap.png" alt="Mapa do Japão"
+            /></a>
+          </li>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="conteudo-interno">
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/geodata/japanLow.js"></script>
+        <script src="./js/japanmap.js"></script>
+        <div id="chartdiv"></div>
+      </div>
+
+      <aside class="aside-map">
+        <img
+          class="img-no-texto"
+          src="./img/entretenimento/batashijapa.jpg"
+          alt="Esporte japones"
+          title="Esporte Japonês"
+        />
+      </aside>
+
+      <div id="aside-conteudo-map">
+        <h3 class="subtitulos3-map">INFORMAÇÕES SOBRE O PAÍS</h3>
+        <p class="texto-secundario-2-map">
+          <strong style="color: #ff0000; text-transform: uppercase"
+            >ÁREA DO JAPÃO: </strong
+          ><b>377.975 km²</b>
+          <br />
+          <strong style="color: #ff0000; text-transform: uppercase"
+            >N° de habitantes no JAPÃO: </strong
+          ><b>125,9 milhões</b>
+
+          <br />
+          <strong style="color: #ff0000; text-transform: uppercase"
+            >Expectativa de vida: </strong
+          ><b>84 anos</b>
+
+          <br />
+          <strong style="color: #ff0000; text-transform: uppercase"
+            >N° de brasileiros no Japão: </strong
+          ><b>206 mil brasileiros</b>
+        </p>
+      </div>
+    </main>
+
+    <footer id="footer-map">
+      <strong>Desenvolvido por Samuel Orsini</strong>
+    </footer>
+  </body>
+</html>
